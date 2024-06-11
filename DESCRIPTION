@@ -2,7 +2,7 @@ Package: aleksandeR
 Title: Aleksander Bang-Larsen's personal convenience functions
 Version: 0.0.0.9000
 Authors@R: 
-    person("Aleksander", "Bang-Larsen", , "contact@aleksanderbl.dk", role = c("aut", "cre"),
+    person("Aleksander", "Bang-Larsen", , "contact@aleksanderbl.dk", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0009-0007-7984-4650"))
 Description: This package supplies all the convenience functions that I have written to make my life easier.
 License: AGPL (>= 3)
@@ -12,3 +12,5 @@ RoxygenNote: 7.3.1
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+URL: https://github.com/aleksanderbl29/aleksandeR
+BugReports: https://github.com/aleksanderbl29/aleksandeR/issues
