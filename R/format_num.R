@@ -3,7 +3,7 @@
 #' @param x An integer/double value.
 #' @param decimals The amount of decimals the input x should be rounded to.
 #' @param rounding Whether or not the input x should be rounded. Excludes the use of the decimals argument.
-#' @param big.mark The character that divides numbers in thousands.
+#' @param big.mark The thousand separator.
 #' @param decimal.mark The decimal separator.
 #'
 #' @return A number formatted correctly with two (default) decimals, a comma as the decimal separator and a period as the thousand-separator. The type is *characther*.

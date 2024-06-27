@@ -19,7 +19,7 @@ format_num(
 
 \item{rounding}{Whether or not the input x should be rounded. Excludes the use of the decimals argument.}
 
-\item{big.mark}{The character that divides numbers in thousands.}
+\item{big.mark}{The thousand separator.}
 
 \item{decimal.mark}{The decimal separator.}
 }
