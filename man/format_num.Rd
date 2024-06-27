@@ -33,4 +33,8 @@ Format a number for presentation
 x <- pi
 format_num(x)
 
+format_num(x, 1)
+
+format_num(x, rounding = FALSE)
+
 }

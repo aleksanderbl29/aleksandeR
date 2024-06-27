@@ -13,6 +13,10 @@
 #' x <- pi
 #' format_num(x)
 #'
+#' format_num(x, 1)
+#'
+#' format_num(x, rounding = FALSE)
+#'
 format_num <- function(x, decimals = 2, rounding = TRUE, big.mark = ".", decimal.mark = ",") {
 
   if (is.numeric(x)) {
