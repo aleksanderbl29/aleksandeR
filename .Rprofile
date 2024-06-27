@@ -5,3 +5,6 @@ if (interactive()) {
   devtools::dev_sitrep()
 }
 
+if (interactive()) {
+  source("~/.Rprofile")
+}
