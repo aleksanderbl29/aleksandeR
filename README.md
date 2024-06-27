@@ -20,7 +20,34 @@ You can install the development version of aleksandeR from
 ``` r
 # install.packages("devtools")
 devtools::install_github("aleksanderbl29/aleksandeR")
+
+library(aleksandeR)
 ```
+
+## Functions
+
+The functions of this package all belong to one of the following types:
+
+1.  Formatting/output (great for Quarto or Rmarkdown)
+2.  ggplot themes
+3.  Wrappers for functions from other packages that I use frequently
+
+### Formatting and output
+
+I currently have `format_num()` that formats numbers in a way that
+conforms to nothern european number presentation standards.
+
+### Themes for ggplot2
+
+All my custom themes are very close to either `ggplot2::theme_minimal()`
+or `cowplot::theme_cowplot()` but have my own twists and personal
+defaults integrated. The themes are created for each type of plot and
+can be called individually or through the aptly named
+`theme_aleksander()`.
+
+### Wrappers
+
+I currently don’t have any functions in this category - But i plan to!
 
 ## Development
 
@@ -32,36 +59,3 @@ the great video series by [Pat
 Schloss](https://www.schlosslab.org/labbies/schloss.html). Take a look
 if you’re interested. [Video
 link](https://www.youtube.com/watch?v=TaNvqwMmHus)
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(aleksandeR)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
