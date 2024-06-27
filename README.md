@@ -25,7 +25,13 @@ devtools::install_github("aleksanderbl29/aleksandeR")
 ## Development
 
 This package is built with the instructions from the great package-book
-[R Packages (2e)](https://r-pkgs.org)
+[R Packages (2e)](https://r-pkgs.org).
+
+I try to do test-driven development which was first introduced to me in
+the great video series by [Pat
+Schloss](https://www.schlosslab.org/labbies/schloss.html). Take a look
+if you’re interested. [Video
+link](https://www.youtube.com/watch?v=TaNvqwMmHus)
 
 ## Example
 
