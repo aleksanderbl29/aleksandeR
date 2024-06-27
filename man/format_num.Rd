@@ -20,7 +20,7 @@ format_num(
 \item{decimal.mark}{The decimal separator}
 }
 \value{
-A number formatted correctly with two (default) decimals, a comma as the decimal separator and a period as the thousand-separator.
+A number formatted correctly with two (default) decimals, a comma as the decimal separator and a period as the thousand-separator. The type is \emph{characther}.
 }
 \description{
 Format a number for presentation
