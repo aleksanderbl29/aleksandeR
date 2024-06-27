@@ -13,11 +13,15 @@ format_num(
 )
 }
 \arguments{
-\item{x}{An integer/double value}
+\item{x}{An integer/double value.}
 
-\item{big.mark}{The character that divides numbers in thousands}
+\item{decimals}{The amount of decimals the input x should be rounded to.}
 
-\item{decimal.mark}{The decimal separator}
+\item{rounding}{Whether or not the input x should be rounded. Excludes the use of the decimals argument.}
+
+\item{big.mark}{The character that divides numbers in thousands.}
+
+\item{decimal.mark}{The decimal separator.}
 }
 \value{
 A number formatted correctly with two (default) decimals, a comma as the decimal separator and a period as the thousand-separator. The type is \emph{characther}.
