@@ -1,0 +1,6 @@
+bibentry(
+  bibtype  = "Software",
+  title    = "aleksandeR - Personal convenience functions",
+  author   = "Aleksander Bang-Larsen",
+  year     = 2024
+)
