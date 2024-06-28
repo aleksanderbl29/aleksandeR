@@ -1,6 +1,4 @@
-#' theme_alek_map()
-#' A clean theme that is good for displaying maps from
-#' \code{\link[ggplot2]{geom_map}()}.
+#' A theme made for maps from \code{\link[ggplot2]{geom_map}()}.
 #'
 #' @inheritParams ggplot2::theme_grey
 #'
