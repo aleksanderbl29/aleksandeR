@@ -1,3 +1,17 @@
 url: http://package.aleksanderbl.dk/
 template:
   bootstrap: 5
+
+reference:
+  - title: Formatting
+    desc: Functions made for formatting output for Quarto or Rmarkdown. Also useful for copy-pasting outputs from the R console.
+  - contents:
+    - format_num
+
+  - title: Themes
+    desc: Theme functions for differnet types of plots
+  - contents:
+    - starts_with("theme")
+
+  - title: Wrappers
+    desc: Wrappers around other useful functions
