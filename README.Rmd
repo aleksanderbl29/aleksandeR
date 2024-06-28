@@ -29,7 +29,6 @@ You can install the development version of aleksandeR from [GitHub](https://gith
 ``` r
 # install.packages("devtools")
 devtools::install_github("aleksanderbl29/aleksandeR")
-
 library(aleksandeR)
 ```
 
