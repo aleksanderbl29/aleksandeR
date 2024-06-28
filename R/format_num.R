@@ -17,7 +17,7 @@
 #'
 #' format_num(x, rounding = FALSE)
 #'
-format_num <- function(x, decimals = 2, rounding = TRUE, big.mark = ".", decimal.mark = ",") {
+format_num <- function(x, decimals = 2, rounding = TRUE, big_mark = ".", decimal_mark = ",") {
 
   if (is.numeric(x)) {
     # No error
@@ -37,7 +37,7 @@ format_num <- function(x, decimals = 2, rounding = TRUE, big.mark = ".", decimal
     x <- x
   }
 
-  x <- format(x, big.mark = big.mark, decimal.mark = decimal.mark, scientific = FALSE)
+  x <- format(x, big.mark = big_mark, decimal.mark = decimal_mark, scientific = FALSE)
 
   return(x)
 }
