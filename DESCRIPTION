@@ -14,3 +14,5 @@ Suggests:
 Config/testthat/edition: 3
 URL: https://rpakke.aleksanderbl.dk, https://github.com/aleksanderbl29/aleksandeR
 BugReports: https://github.com/aleksanderbl29/aleksandeR/issues
+Imports: 
+    ggplot2
