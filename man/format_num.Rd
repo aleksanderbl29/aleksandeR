@@ -8,8 +8,8 @@ format_num(
   x,
   decimals = 2,
   rounding = TRUE,
-  big.mark = ".",
-  decimal.mark = ","
+  big_mark = ".",
+  decimal_mark = ","
 )
 }
 \arguments{
@@ -19,9 +19,9 @@ format_num(
 
 \item{rounding}{Whether or not the input x should be rounded. Excludes the use of the decimals argument.}
 
-\item{big.mark}{The thousand separator.}
+\item{big_mark}{The thousand separator.}
 
-\item{decimal.mark}{The decimal separator.}
+\item{decimal_mark}{The decimal separator.}
 }
 \value{
 A number formatted correctly with two (default) decimals, a comma as the decimal separator and a period as the thousand-separator. The type is \emph{characther}.
