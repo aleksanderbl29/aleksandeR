@@ -2,4 +2,9 @@
 
 export(format_num)
 export(theme_map)
+export(theme_map_color)
 importFrom(ggplot2,"%+replace%")
+importFrom(ggplot2,element_blank)
+importFrom(ggplot2,theme)
+importFrom(ggplot2,theme_bw)
+importFrom(ggplot2,unit)
