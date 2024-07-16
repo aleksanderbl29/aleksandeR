@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_alek_map.R
 \name{theme_map}
 \alias{theme_map}
-\title{A theme made for maps from \code{\link[ggplot2]{geom_map}()}.}
+\title{A theme made for maps from  \code{ggplot2::geom_map()}.}
 \usage{
 theme_map(base_size = 9, base_family = "")
 }
@@ -12,5 +12,5 @@ theme_map(base_size = 9, base_family = "")
 \item{base_family}{base font family}
 }
 \description{
-A theme made for maps from \code{\link[ggplot2]{geom_map}()}.
+This theme is made specifically for maps made with. A color-ready version exists as \code{theme_map_color()}.
 }
