@@ -15,4 +15,5 @@ Config/testthat/edition: 3
 URL: http://package.aleksanderbl.dk/, https://github.com/aleksanderbl29/aleksandeR
 BugReports: https://github.com/aleksanderbl29/aleksandeR/issues
 Imports: 
-    ggplot2 (>= 3.5.1)
+    ggplot2 (>= 3.5.1),
+    ggthemes
