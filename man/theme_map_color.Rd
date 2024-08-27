@@ -13,6 +13,15 @@ theme_map_color(
 )
 }
 \arguments{
+\item{color}{The primary color of the \code{theme_map_color()} plot. "Default is
+"green".}
+
+\item{secondary_color}{The secondary color of the \code{theme_map_color()} plot.
+Default is "pink".}
+
+\item{background_color}{The primary color of the \code{theme_map_color()} plot.
+Defaults is "black".}
+
 \item{base_size}{base font size, given in pts.}
 
 \item{base_family}{base font family}

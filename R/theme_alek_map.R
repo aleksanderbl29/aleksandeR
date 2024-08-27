@@ -29,6 +29,12 @@ theme_map <- function(base_size = 9, base_family = "") {
 #' This theme is made color-ready specifically for maps.
 #'
 #' @inheritParams ggplot2::theme_grey
+#' @param color The primary color of the `theme_map_color()` plot. "Default is
+#'   "green".
+#' @param secondary_color The secondary color of the `theme_map_color()` plot.
+#'   Default is "pink".
+#' @param background_color The primary color of the `theme_map_color()` plot.
+#'   Defaults is "black".
 #'
 #' @importFrom ggplot2 %+replace% element_blank unit theme theme_bw
 #'
