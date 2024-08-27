@@ -13,3 +13,16 @@ prepare_classes <- function(classes) {
     dir.create(paste0("../", classes[i]))
   }
 }
+
+use_r_w_course <- function(shortname = "pwd") {
+  if (shortname == "pwd") {
+    name <- paste("R -", basename(getwd()))
+  } else {
+    name <- shortname
+  }
+
+  list.files()
+  usethis::create_project(name)
+
+  return(name)
+}
