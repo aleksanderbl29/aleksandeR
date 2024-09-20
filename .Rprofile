@@ -1,3 +1,7 @@
+if (interactive()) {
+  source("~/.Rprofile")
+}
+
 source("renv/activate.R")
 
 if (interactive()) {
@@ -5,6 +9,3 @@ if (interactive()) {
   devtools::dev_sitrep()
 }
 
-if (interactive()) {
-  source("~/.Rprofile")
-}
