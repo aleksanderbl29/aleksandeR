@@ -7,8 +7,8 @@ pkg_bib <- function(dependencies = FALSE, filename = "renv_packages.bib") {
   } else if (dependencies == TRUE) {
     pkgs <- dependency_bib()
   }
-  cli::cli_alert("Creating file pkg_references.bib")
   print_bib(pkgs = pkgs, filename = filename)
+  cli::cli_alert("Creating file {.file {filename}}")
   cli::cli_alert_info("It includes: ")
   return(pkgs)
 }
