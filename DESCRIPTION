@@ -16,6 +16,7 @@ Config/testthat/parallel: true
 URL: http://package.aleksanderbl.dk/, https://github.com/aleksanderbl29/aleksandeR
 BugReports: https://github.com/aleksanderbl29/aleksandeR/issues
 Imports: 
+    bibtex,
     cli,
     ggplot2 (>= 3.5.1),
     ggthemes,

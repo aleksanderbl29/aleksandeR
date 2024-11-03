@@ -2,6 +2,7 @@
 
 export(format_num)
 export(install_basic_packages)
+export(pkg_bib)
 export(prepare_classes)
 export(project_init)
 export(theme_map)
