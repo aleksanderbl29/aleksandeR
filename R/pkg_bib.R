@@ -1,7 +1,7 @@
 #' Create bibliography of `{renv}`-installed packages
 #' @description This was inspired by https://github.com/rstudio/renv/issues/340
 #' @export
-pkg_bib <- function(dependencies = FALSE, filename = "renv_packages.bib") {
+pkg_bib <- function(dependencies = FALSE, filename = "packages.bib") {
   if (dependencies == FALSE) {
     pkgs <- simple_bib()
   } else if (dependencies == TRUE) {
@@ -25,6 +25,6 @@ dependency_bib <- function() {
   return(pkgs)
 }
 
-print_bib <- function(pkgs, filename = "renv_packages.bib") {
+print_bib <- function(pkgs, filename = "packages.bib") {
   bibtex::write.bib(entry = pkgs, file = filename, append = FALSE)
 }

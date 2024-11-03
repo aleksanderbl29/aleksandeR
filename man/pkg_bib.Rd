@@ -4,7 +4,7 @@
 \alias{pkg_bib}
 \title{Create bibliography of \code{{renv}}-installed packages}
 \usage{
-pkg_bib(dependencies = FALSE, filename = "renv_packages.bib")
+pkg_bib(dependencies = FALSE, filename = "packages.bib")
 }
 \description{
 This was inspired by https://github.com/rstudio/renv/issues/340
