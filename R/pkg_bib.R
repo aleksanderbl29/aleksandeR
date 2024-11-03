@@ -26,5 +26,5 @@ dependency_bib <- function() {
 }
 
 print_bib <- function(pkgs, filename = "renv_packages.bib") {
-  bibtex::write.bib(entry = pkgs, file = "renv_packages.bib", append = FALSE)
+  bibtex::write.bib(entry = pkgs, file = filename, append = FALSE)
 }
