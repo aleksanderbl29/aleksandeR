@@ -29,7 +29,7 @@ The functions of this package all belong to one of the following types:
 
 1.  Formatting/output (great for Quarto or Rmarkdown)
 2.  ggplot themes
-3.  Wrappers for functions from other packages that I use frequently
+3.  Misc. functions
 
 ### Formatting and output
 
@@ -44,9 +44,9 @@ defaults integrated. The themes are created for each type of plot and
 can be called individually or through the aptly named
 `theme_aleksander()`.
 
-### Wrappers
+### Misc.
 
-I currently don’t have any functions in this category - But i plan to!
+This includes `pkg_bib()`.
 
 ## Development
 

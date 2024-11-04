@@ -6,6 +6,15 @@
 \usage{
 pkg_bib(dependencies = FALSE, filename = "packages.bib")
 }
+\arguments{
+\item{dependencies}{Boolean to define how many packages are cited.}
+
+\item{filename}{Specify a filename/path for the \code{.bib}.}
+}
+\value{
+Usually called for its side effect of a \code{.bib} written to the
+provided paths. Also outputs the package names in the console.
+}
 \description{
 This was inspired by https://github.com/rstudio/renv/issues/340
 }

@@ -1,5 +1,13 @@
 #' Create bibliography of `{renv}`-installed packages
+#'
+#' @param dependencies Boolean to define how many packages are cited.
+#' @param filename Specify a filename/path for the `.bib`.
+#'
 #' @description This was inspired by https://github.com/rstudio/renv/issues/340
+#'
+#' @returns Usually called for its side effect of a `.bib` written to the
+#'   provided paths. Also outputs the package names in the console.
+#'
 #' @export
 pkg_bib <- function(dependencies = FALSE, filename = "packages.bib") {
   if (dependencies == FALSE) {
