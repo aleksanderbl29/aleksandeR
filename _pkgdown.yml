@@ -7,6 +7,7 @@ reference:
     desc: Functions made for formatting output for Quarto or Rmarkdown. Also useful for copy-pasting outputs from the R console.
   - contents:
     - format_num
+    - pkg_bib
 
   - title: Themes
     desc: Theme functions for differnet types of plots
