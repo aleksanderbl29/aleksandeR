@@ -4,7 +4,6 @@ project_init <- function(packages = NULL) {
   install.packages(c(
     packages,
     "tidyverse",
-
     "pak"
   ))
   pak::pak("aleksanderbl29/dawaR")
@@ -22,6 +21,7 @@ install_basic_packages <- function(additional_packages = NULL) {
     "modelsummary",
     "wesanderson",
     "here",
+    "foghorn",
     additional_packages)
 
   # Loop through the vector, check if installed, and install if missing
