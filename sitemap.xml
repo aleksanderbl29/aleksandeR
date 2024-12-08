@@ -1,12 +1,12 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>/404.html</loc></url>
-<url><loc>/LICENSE.html</loc></url>
-<url><loc>/authors.html</loc></url>
-<url><loc>/index.html</loc></url>
-<url><loc>/reference/format_num.html</loc></url>
-<url><loc>/reference/index.html</loc></url>
-<url><loc>/reference/pkg_bib.html</loc></url>
-<url><loc>/reference/theme_map.html</loc></url>
-<url><loc>/reference/theme_map_color.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/404.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/LICENSE.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/authors.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/index.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/reference/format_num.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/reference/index.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/reference/pkg_bib.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/reference/theme_map.html</loc></url>
+<url><loc>http://package.aleksanderbl.dk/reference/theme_map_color.html</loc></url>
 </urlset>
 
