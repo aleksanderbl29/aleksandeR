@@ -14,13 +14,16 @@ pkg_bib <- function(
     filename = "packages.bib",
     targets = FALSE
     ) {
+
+  pkgs <- NULL
+
   if (targets) {
-    targets_bib()
+    pkgs <- targets_bib()
   }
 
-  if (!dependencies) {
+  if (!dependencies && is.null(pkgs)) {
     pkgs <- simple_bib()
-  } else if (dependencies) {
+  } else if (dependencies && is.null(pkgs)) {
     pkgs <- dependency_bib()
   }
   print_bib(pkgs = pkgs, filename = filename)
@@ -55,22 +58,12 @@ targets_bib <- function() {
   # Read the file content
   pkg_file <- readLines("_targets_packages.R")
 
-  # Find library calls using regex
-  # Matches patterns like: library(package) or library("package")
-  library_pattern <- "^\\s*library\\(([\"\']?)([[:alnum:].]+)\\1\\)"
-  pkg_matches <- regexec(library_pattern, pkg_file)
+  # Find lines that start with library
+  library_lines <- grep("^library\\(", pkg_file, value = TRUE)
 
-  # Extract package names from matches
-  pkgs <- character(0)
-  for (i in seq_along(pkg_matches)) {
-    match <- pkg_matches[[i]]
-    if (match[1] != -1) {
-      # Group 2 contains the package name
-      pkg_name <- substr(pkg_file[i],
-                         match[3],
-                         match[3] + attr(match, "match.length")[3] - 1)
-      pkgs <- c(pkgs, pkg_name)
-    }
-  }
+  # Extract package names from library calls
+  # Remove "library(" and ")" from each line
+  pkgs <- gsub("^library\\(|\\)$", "", library_lines)
+
   return(pkgs)
 }
