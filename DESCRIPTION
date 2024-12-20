@@ -1,6 +1,6 @@
 Package: aleksandeR
 Title: Aleksander Bang-Larsen's personal convenience functions
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Date: 2024-11-3
 Authors@R: 
     person("Aleksander", "Bang-Larsen", , "contact@aleksanderbl.dk", role = c("aut", "cre", "cph"),
