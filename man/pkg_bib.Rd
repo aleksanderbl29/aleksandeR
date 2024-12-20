@@ -4,7 +4,7 @@
 \alias{pkg_bib}
 \title{Create bibliography of \code{{renv}}-installed packages}
 \usage{
-pkg_bib(dependencies = FALSE, filename = "packages.bib")
+pkg_bib(dependencies = FALSE, filename = "packages.bib", targets = FALSE)
 }
 \arguments{
 \item{dependencies}{Boolean to define how many packages are cited.}

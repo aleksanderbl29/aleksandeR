@@ -9,10 +9,18 @@
 #'   provided paths. Also outputs the package names in the console.
 #'
 #' @export
-pkg_bib <- function(dependencies = FALSE, filename = "packages.bib") {
-  if (dependencies == FALSE) {
+pkg_bib <- function(
+    dependencies = FALSE,
+    filename = "packages.bib",
+    targets = FALSE
+    ) {
+  if (targets) {
+    targets_bib()
+  }
+
+  if (!dependencies) {
     pkgs <- simple_bib()
-  } else if (dependencies == TRUE) {
+  } else if (dependencies) {
     pkgs <- dependency_bib()
   }
   print_bib(pkgs = pkgs, filename = filename)
@@ -35,4 +43,34 @@ dependency_bib <- function() {
 
 print_bib <- function(pkgs, filename = "packages.bib") {
   bibtex::write.bib(entry = pkgs, file = filename, append = FALSE)
+}
+
+targets_bib <- function() {
+  # Check if targets packages file exists
+  if (!file.exists("_targets_packages.R")) {
+    cli::cli_alert_warning("File {.file _targets_packages.R} not found")
+    return(character(0))
+  }
+
+  # Read the file content
+  pkg_file <- readLines("_targets_packages.R")
+
+  # Find library calls using regex
+  # Matches patterns like: library(package) or library("package")
+  library_pattern <- "^\\s*library\\(([\"\']?)([[:alnum:].]+)\\1\\)"
+  pkg_matches <- regexec(library_pattern, pkg_file)
+
+  # Extract package names from matches
+  pkgs <- character(0)
+  for (i in seq_along(pkg_matches)) {
+    match <- pkg_matches[[i]]
+    if (match[1] != -1) {
+      # Group 2 contains the package name
+      pkg_name <- substr(pkg_file[i],
+                         match[3],
+                         match[3] + attr(match, "match.length")[3] - 1)
+      pkgs <- c(pkgs, pkg_name)
+    }
+  }
+  return(pkgs)
 }
