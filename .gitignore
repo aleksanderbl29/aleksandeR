@@ -6,3 +6,4 @@
 .quarto
 docs
 renv_packages.bib
+packages.bib
