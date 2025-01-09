@@ -2,6 +2,9 @@
 #'
 #' @param dependencies Boolean to define how many packages are cited.
 #' @param filename Specify a filename/path for the `.bib`.
+#' @param targets Boolean to define if the bibliography should be created based
+#'   on the packages defined in a targets pipeline and saved to
+#'   `_targets_packages.R` by the function `targets::tar_renv()`
 #'
 #' @description This was inspired by https://github.com/rstudio/renv/issues/340
 #'
@@ -65,5 +68,7 @@ targets_bib <- function() {
   # Remove "library(" and ")" from each line
   pkgs <- gsub("^library\\(|\\)$", "", library_lines)
 
-  return(pkgs)
+  out <- c("targets", "tarchetypes", pkgs)
+
+  return(out)
 }

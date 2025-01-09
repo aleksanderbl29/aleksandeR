@@ -10,6 +10,10 @@ pkg_bib(dependencies = FALSE, filename = "packages.bib", targets = FALSE)
 \item{dependencies}{Boolean to define how many packages are cited.}
 
 \item{filename}{Specify a filename/path for the \code{.bib}.}
+
+\item{targets}{Boolean to define if the bibliography should be created based
+on the packages defined in a targets pipeline and saved to
+\verb{_targets_packages.R} by the function \code{targets::tar_renv()}}
 }
 \value{
 Usually called for its side effect of a \code{.bib} written to the

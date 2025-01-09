@@ -24,4 +24,6 @@ Imports:
     pak,
     stringr,
     usethis,
-    wesanderson
+    wesanderson,
+    renv,
+    jsonlite
