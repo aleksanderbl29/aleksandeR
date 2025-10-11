@@ -7,6 +7,8 @@
 
 [![R-CMD-check](https://github.com/aleksanderbl29/aleksandeR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aleksanderbl29/aleksandeR/actions/workflows/R-CMD-check.yaml)
 [![codecov](https://codecov.io/gh/aleksanderbl29/aleksandeR/graph/badge.svg?token=FIXGM13TQF)](https://codecov.io/gh/aleksanderbl29/aleksandeR)
+[![aleksandeR status
+badge](https://aleksanderbl29.r-universe.dev/aleksandeR/badges/version)](https://aleksanderbl29.r-universe.dev/aleksandeR)
 <!-- badges: end -->
 
 This package exists to make my personal convenience functions portable
