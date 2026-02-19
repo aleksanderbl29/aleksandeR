@@ -10,7 +10,7 @@ plot_nchar(plot)
 \item{plot}{Input a \code{ggplot2} object}
 }
 \value{
-Returns a integer with the amount of characters in the plot
+Returns a integer with the amount of characters in the plot. This is excluding spaces.
 }
 \description{
 Get character count from \code{ggplot2} object.

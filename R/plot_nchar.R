@@ -2,7 +2,7 @@
 #'
 #' @param plot Input a `ggplot2` object
 #'
-#' @returns Returns a integer with the amount of characters in the plot
+#' @returns Returns a integer with the amount of characters in the plot. This is excluding spaces.
 #' @export
 #'
 #' @examples
@@ -21,11 +21,12 @@ plot_nchar <- function(plot) {
 
   # Get text from geom_text/geom_label layers
   text_layers <- lapply(built_plot$data, function(layer) {
-    if("label" %in% names(layer)) {
+    if ("label" %in% names(layer)) {
       return(layer$label)
     }
     NULL
-  }) |> unique()
+  }) |>
+    unique()
 
   text_layers <- unlist(text_layers[!sapply(text_layers, is.null)])
 

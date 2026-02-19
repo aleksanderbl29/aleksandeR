@@ -15,7 +15,11 @@ test_that("plot_nchar correctly extracts text", {
     ggplot2::geom_line() +
     ggplot2::geom_text(nudge_y = 3) +
     ggplot2::geom_text(data = df_1) +
-    ggplot2::annotate("text", x = c(3, 8), y = c(3, 8),
-                      label = c("Hej", "Farvel til dig"))
-  expect_equal(63, plot_nchar(plot))
+    ggplot2::annotate(
+      "text",
+      x = c(3, 8),
+      y = c(3, 8),
+      label = c("Hej", "Farvel til dig")
+    )
+  expect_equal(61, plot_nchar(plot))
 })
