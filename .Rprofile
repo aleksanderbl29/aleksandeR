@@ -8,4 +8,3 @@ if (interactive()) {
   suppressMessages(require(devtools))
   devtools::dev_sitrep()
 }
-
