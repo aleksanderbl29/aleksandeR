@@ -1,0 +1,55 @@
+# aleksandeR
+
+This package exists to make my personal convenience functions portable
+and easy to share.
+
+## Installation
+
+You can install the development version of aleksandeR from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("aleksanderbl29/aleksandeR")
+library(aleksandeR)
+```
+
+## Functions
+
+The functions of this package all belong to one of the following types:
+
+1.  Formatting/output (great for Quarto or Rmarkdown)
+2.  ggplot themes
+3.  Misc. functions
+
+### Formatting and output
+
+I currently have
+[`format_num()`](http://package.aleksanderbl.dk/reference/format_num.md)
+that formats numbers in a way that conforms to nothern european number
+presentation standards.
+
+### Themes for ggplot2
+
+All my custom themes are very close to either
+[`ggplot2::theme_minimal()`](https://ggplot2.tidyverse.org/reference/ggtheme.html)
+or `cowplot::theme_cowplot()` but have my own twists and personal
+defaults integrated. The themes are created for each type of plot and
+can be called individually or through the aptly named
+`theme_aleksander()`.
+
+### Misc.
+
+This includes
+[`pkg_bib()`](http://package.aleksanderbl.dk/reference/pkg_bib.md).
+
+## Development
+
+This package is built with the instructions from the great package-book
+[R Packages (2e)](https://r-pkgs.org).
+
+For the themes I try to do test-driven development. It was first
+introduced to me in the great video series by [Pat
+Schloss](https://www.schlosslab.org/labbies/schloss.html). Take a look
+if you’re interested. [Video
+link](https://www.youtube.com/watch?v=TaNvqwMmHus)
