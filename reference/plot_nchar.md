@@ -16,7 +16,8 @@ plot_nchar(plot)
 
 ## Value
 
-Returns a integer with the amount of characters in the plot
+Returns a integer with the amount of characters in the plot. This is
+excluding spaces.
 
 ## Examples
 
