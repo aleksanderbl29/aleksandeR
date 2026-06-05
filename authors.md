@@ -11,13 +11,13 @@ Source:
 [`DESCRIPTION`](https://github.com/aleksanderbl29/aleksandeR/blob/main/DESCRIPTION)
 
 Bang-Larsen A (2026). *aleksandeR: Aleksander Bang-Larsen's personal
-convenience functions*. R package version 0.0.0.9004,
+convenience functions*. R package version 0.0.0.9005,
 <http://package.aleksanderbl.dk/>.
 
     @Manual{,
       title = {aleksandeR: Aleksander Bang-Larsen's personal convenience functions},
       author = {Aleksander Bang-Larsen},
       year = {2026},
-      note = {R package version 0.0.0.9004},
+      note = {R package version 0.0.0.9005},
       url = {http://package.aleksanderbl.dk/},
     }
