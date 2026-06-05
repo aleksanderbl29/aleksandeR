@@ -4,16 +4,21 @@
 \alias{plot_nchar}
 \title{Get character count from \code{ggplot2} object.}
 \usage{
-plot_nchar(plot)
+plot_nchar(plot, debug = FALSE)
 }
 \arguments{
-\item{plot}{Input a \code{ggplot2} object}
+\item{plot}{Input a \code{ggplot2} object or a \code{patchwork} object.}
+
+\item{debug}{Logical. If \code{TRUE}, prints the text values that are counted.}
 }
 \value{
-Returns a integer with the amount of characters in the plot. This is excluding spaces.
+Returns an integer with the amount of characters in the plot.
+Spaces are included.
 }
 \description{
-Get character count from \code{ggplot2} object.
+Counts the number of characters in visible text elements from a \code{ggplot2}
+plot. This also supports plots composed with \code{patchwork}, including collected
+guides.
 }
 \examples{
 plot <- data.frame(

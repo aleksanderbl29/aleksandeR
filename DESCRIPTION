@@ -9,7 +9,6 @@ Description: This package supplies all the convenience functions that I have wri
 License: AGPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
@@ -26,4 +25,8 @@ Imports:
     usethis,
     wesanderson,
     renv,
-    jsonlite
+    jsonlite,
+    patchwork (>= 1.3.2)
+Config/roxygen2/version: 8.0.0
+Remotes:  
+    thomasp85/patchwork
