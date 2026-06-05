@@ -1,23 +1,29 @@
 # Get character count from `ggplot2` object.
 
-Get character count from `ggplot2` object.
+Counts the number of characters in visible text elements from a
+`ggplot2` plot. This also supports plots composed with `patchwork`,
+including collected guides.
 
 ## Usage
 
 ``` r
-plot_nchar(plot)
+plot_nchar(plot, debug = FALSE)
 ```
 
 ## Arguments
 
 - plot:
 
-  Input a `ggplot2` object
+  Input a `ggplot2` object or a `patchwork` object.
+
+- debug:
+
+  Logical. If `TRUE`, prints the text values that are counted.
 
 ## Value
 
-Returns a integer with the amount of characters in the plot. This is
-excluding spaces.
+Returns an integer with the amount of characters in the plot. Spaces are
+included.
 
 ## Examples
 

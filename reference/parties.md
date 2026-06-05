@@ -8,11 +8,6 @@ List of parties up for election
 parties
 ```
 
-## Format
-
-An object of class `tbl_df` (inherits from `tbl`, `data.frame`) with 12
-rows and 4 columns.
-
 ## Source
 
 https://www.valg.im.dk/partier-og-kandidater/opstillingsberettigede-partiers-adresser-mv
